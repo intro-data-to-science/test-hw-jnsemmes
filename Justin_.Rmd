@@ -1,0 +1,18 @@
+---
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+
+```{r}
+library(ggplot2)
+library(readxl)
+wine <- read_excel("winemag.xlsx")
+ggplot(wine, aes(country,points)) +geom_dotplot(color="red ")
+
+
+
+```
+
